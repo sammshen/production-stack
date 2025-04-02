@@ -7,7 +7,7 @@ fi
 # Get the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Run router.py from the correct directory
+# Run router (app.py) from the correct directory
 python3 "$SCRIPT_DIR/app.py" --port "$1" \
     --service-discovery static \
     --static-backends "http://localhost:9004,http://localhost:9001,http://localhost:9002,http://localhost:9003" \
